@@ -1,0 +1,22 @@
+{
+  "name": "dinosaur-project",
+  "version": "1.0.0",
+  "description": "fetch a random dino",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElisFilipsson/dinosaur-project.git"
+  },
+  "author": "Sandra Filipsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElisFilipsson/dinosaur-project/issues"
+  },
+  "homepage": "https://github.com/ElisFilipsson/dinosaur-project#readme",
+  "keywords": [
+    "javascript"
+  ]
+}
