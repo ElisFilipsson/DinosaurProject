@@ -1,14 +1,18 @@
 {
   "name": "dinosaur-project",
-  "version": "1.3.0",
   "description": "fetch a random dino",
   "main": "src/index.js",
+  "version": "0.0.0semantically-released",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElisFilipsson/dinosaur-project.git"
+    "url": "https://github.com/ElisFilipsson/dinosaur-project.git"
   },
   "author": "Sandra Filipsson",
   "license": "ISC",
@@ -18,5 +22,15 @@
   "homepage": "https://github.com/ElisFilipsson/dinosaur-project#readme",
   "keywords": [
     "javascript"
-  ]
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "commitizen": "^2.8.6",
+    "cz-conventional-changelog": "^1.2.0",
+    "mocha": "^3.0.2",
+    "semantic-release": "^4.3.5"
+  },
+  "dependencies": {
+    "unique-random-array": "^1.0.0"
+  }
 }
