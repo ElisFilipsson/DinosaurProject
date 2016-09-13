@@ -2,15 +2,15 @@
   "name": "dinosaur-project",
   "description": "fetch a random dino",
   "main": "src/index.js",
-  "version": "0.0.0semantically-released",
+  "version": "0.0.0-semantically-release",
   "scripts": {
     "test": "mocha src/index.test.js -w",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "config": {                                                                                                                           
-    "commitizen": {                                                                                                                     
-      "path": "node_modules/cz-conventional-changelog"                                                                                                       
-    }                                                                                                                                   
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "repository": {
     "type": "git",
