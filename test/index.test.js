@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var dinosaurs = require('./index');
+var dinosaurs = require('../src/index');
 
 describe('dinosaurs', function(){
     it('should work', function(){
