@@ -6,7 +6,9 @@
   "scripts": {
     "test": "mocha --reporter nyan",
     "test:watch": "npm t -- --watch",
-    "test:cov": "istanbul cover -x *.test.js _mocha -- --reporter spec",
+    "test:cov": "istanbul cover -x *.test.js node_modules/mocha/bin/_mocha -- --reporter spec test/index.test.js",
+    "cov:check": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "cov:report": "codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
@@ -14,7 +16,7 @@
       "path": "cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "npm run test"
+      "pre-commit": "npm run test && npm run cov:check"
     }
   },
   "repository": {

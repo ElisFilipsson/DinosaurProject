@@ -12,7 +12,10 @@ before_install:
 before_script:
   - npm prune
   - npm run test
+script:
+  - npm run test:cov
 after_success:
+  - npm run cov:report
   - npm run semantic-release
 branches:
   except:

@@ -27,5 +27,10 @@ describe('dino-name', function() {
             var randomItem = dinosaurs.random();
             expect(dinosaurs.all).to.include(randomItem);
         });
+        it('Should return a an array of random dinosaurs if passed a number', () => {
+          const dinos = dinosaurs.random(3);
+          expect(dinos).to.have.length(3).and.to.be.an('array');
+          expect(dinosaurs.all).to.include.members(dinos);
+        });
     });
 });
